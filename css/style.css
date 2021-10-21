@@ -8,15 +8,15 @@ body {
 3. ID selector -->       #<ID>{...}   
  */
 
-.title:hover {
+.title {
   color: red;
 }
 
 .subtitle {
   color: blue;
 }
-#contact-us {
-  color: green;
+#contact-us{
+    color:green
 }
 
 /* 
@@ -28,43 +28,6 @@ h2 {
   color: red;
 }
 
-#services {
-  color: green;
-}
-
-/* pseudoSelectors :hover children kind of pseudo selctor*/
-
-li:nth-child(3) {
-  color: steelblue;
-}
-
-/* #google:link {
-  color: red;
-}
-
-#google:visited {
-  color: green;
-} */
-
-/* advance selector */
-
-h2 + a {
-  color: red;
-}
-
-/* sibling */
-textarea ~ button {
-  color: green;
-}
-/* child */
-ul > li {
-  color: blue;
-}
-/* descendant selector */
-ul li {
-  columns: red;
-}
-
-img[src^="../img/"] {
-  border: 5px solid black;
+#services{
+  color:green
 }
