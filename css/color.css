@@ -1,0 +1,22 @@
+body{
+    background-color:rgba(239, 245, 214, 0.5);
+}
+
+#title {
+  color: rgb(110, 20, 100);
+}
+
+.subtitle{
+    color: rgb(106, 77, 238);
+}
+
+#service-image{
+     height: 400px;
+     width: 70%;
+    background-image: url("https://lh3.googleusercontent.com/ogw/ADea4I5WL3hpdPkYYIXXFOnaaCGVWO36HDgP1cWzXwe6Ft0=s32-c-mo") ;
+    background-image: url(../img/bg-1.jpeg);
+    background-size: cover;
+    background-color: steelblue;
+    opacity: 0.6;
+
+}
