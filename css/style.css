@@ -1,5 +1,6 @@
 body {
   background: white;
+  
 }
 
 /* There are three tipes of selector in css
@@ -8,13 +9,19 @@ body {
 3. ID selector -->       #<ID>{...}   
  */
 
-.title:hover {
-  color: red;
+.title{
+  color: white;
+  animation-name:red-black;
+  animation-duration: 4s;
+  animation-timing-function: ease-in-out;
+  animation-delay: -2s;
+  animation-iteration-count: infinite;
+  animation-direction:  alternate;
 }
 
 .subtitle {
   color: blue;
-  background-color:aquamarine;
+  background-color: aquamarine;
 }
 #contact-us {
   color: green;
@@ -74,37 +81,84 @@ ul li {
   padding: 20px;
   margin: 40px;
   float: left;
-  
-  
 }
 
-.site-table{
+.site-table {
   margin: 15px;
-  display: flex;
 }
 
 .contianer {
   background-color: red;
   margin: 10px;
 
-  display:flex;
+  display: flex;
   flex-direction: row;
   flex-wrap: wrap;
   justify-content: center;
   align-items: center;
-  
+}
 
+.container-item {
+  background-color: rgb(7, 165, 47);
+  color: white;
+  font-size: 25px;
+  text-align: center;
+
+  margin: 10px;
+  width: 70px;
+  line-height: 50px;
+  border-radius: 5px;
+}
+.grid-container {
+  background-color: black;
+  margin: 10px;
+  height: 300px;
+
+  display: grid;
+  grid-template-columns: auto auto auto;
+  grid-template-rows: auto auto;
+
+  grid-gap: 30px 150px;
+
+  /* justify-content:center;
+  align-items: center; */
+}
+
+.grid-item {
+  color: black;
+  font: size 25px;
+  text-align: center;
+  width: 70px;
+  line-height: 40px;
+  margin: 10px;
+}
+
+.submit-button {
+  margin: 20px 10px;
+  padding: 10px 15px;
+  border: none;
+  text-decoration: none;
+  font-family: "Courier New", Courier, monospace;
+  font-weight: 600;
+  font-size: 20px;
+  color: white;
+  background-color: black;
+  border-radius: 7px;
+  transform:scaleY(45deg);
+  /* transition: background 300ms ease-in-out 1s; */
+  
+}
+
+.submit-button:hover {
+  background: rgb(66, 92, 72);
+  padding: 20px 30px;
+  transform: translate(10px, 20px);
 
 }
 
-.container-item{
-  background-color:rgb(7, 165, 47);
-  color: white;
-  font-size:25px;
-  text-align: center;
 
-  margin:10px;
-  width:70px;
-  line-height: 50px;
-  border-radius: 5px;
+@keyframes red-black {
+  0% {background: red; transform: translate(0 px, 0px)}
+  50% {background: black; transform: translate(10px, 10px)}
+  100% {background: yellow; transform: translate(20px, 20px)}
 }
