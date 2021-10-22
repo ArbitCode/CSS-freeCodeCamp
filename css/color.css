@@ -1,5 +1,11 @@
 body{
     background-color:rgba(239, 245, 214, 0.5);
+    text-align: justify;
+    font-size: 1.15em;
+    font-style: oblique;
+    font-family: 'Nunito', sans-serif;
+
+
 }
 
 #title {
@@ -9,14 +15,17 @@ body{
 .subtitle{
     color: rgb(106, 77, 238);
 }
-
+/* gradient it is trasition between color=> there are two type of gradient 1.Radio, 2. linear */
 #service-image{
      height: 400px;
      width: 70%;
-    background-image: url("https://lh3.googleusercontent.com/ogw/ADea4I5WL3hpdPkYYIXXFOnaaCGVWO36HDgP1cWzXwe6Ft0=s32-c-mo") ;
-    background-image: url(../img/bg-1.jpeg);
     background-size: cover;
-    background-color: steelblue;
-    opacity: 0.6;
+    /* background: linear-gradient(-30deg, rgb(255, 94, 0), green, steelblue, blue); */
+    background: radial-gradient(circle, grey, green, blue 40%, red);
+    opacity: 1;
+
+}
+.link{
+    text-decoration: underline;
 
 }
