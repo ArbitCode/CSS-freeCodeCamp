@@ -79,5 +79,32 @@ ul li {
 }
 
 .site-table{
-  display: none;
+  margin: 15px;
+  display: flex;
+}
+
+.contianer {
+  background-color: red;
+  margin: 10px;
+
+  display:flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+  justify-content: center;
+  align-items: center;
+  
+
+
+}
+
+.container-item{
+  background-color:rgb(7, 165, 47);
+  color: white;
+  font-size:25px;
+  text-align: center;
+
+  margin:10px;
+  width:70px;
+  line-height: 50px;
+  border-radius: 5px;
 }
