@@ -14,6 +14,7 @@ body {
 
 .subtitle {
   color: blue;
+  background-color:aquamarine;
 }
 #contact-us {
   color: green;
@@ -65,8 +66,18 @@ ul li {
   columns: red;
 }
 
-img[src^="../img/"] {
-  border: 5px solid black;
+#about-us-image {
+  height: 300px;
+  width: 60%;
+  /* border: size style color */
+  border: 5px solid red;
+  padding: 20px;
+  margin: 40px;
+  float: left;
+  
+  
 }
 
-/* colors https://youtu.be/1Rs2ND1ryYc video after 1:27:23*/
+.site-table{
+  display: none;
+}
